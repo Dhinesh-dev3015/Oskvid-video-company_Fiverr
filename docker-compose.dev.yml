@@ -1,0 +1,28 @@
+version: '3.8'
+
+# Development docker compose for local testing on port 3000
+# Usage: docker compose -f docker compose.dev.yml up --build
+
+services:
+  # Next.js application for development
+  nextjs-app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: nextjs-app-dev
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./public/images:/app/public/images
+      - ./public/videos:/app/public/videos
+    ports:
+      - "3000:3000"
+    networks:
+      - web-dev
+
+networks:
+  web-dev:
+    driver: bridge
+
+

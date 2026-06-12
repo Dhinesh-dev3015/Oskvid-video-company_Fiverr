@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+/public/images
+/public/*
+/public*
+public
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+data/stats.json
+data/cms.db
+data/*.db
+
+# Compression status files (temporary)
+.compression-status/
+
+# SSL certificates (never commit these!)
+ssl/*.pem
+ssl/*.key
+ssl/*.crt
+ssl/*.cert
+!ssl/.gitkeep
+!ssl/README.md
