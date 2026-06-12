@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"contexts\\\\language-context.tsx -> @/translations\":{\"id\":\"contexts\\\\language-context.tsx -> @/translations\",\"files\":[\"static/chunks/_app-pages-browser_translations_index_ts.js\"]}}"

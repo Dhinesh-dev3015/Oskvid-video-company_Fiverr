@@ -3,10 +3,6 @@
 # dependencies
 /node_modules
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
@@ -21,15 +17,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-data/stats.json
-data/cms.db
-data/*.db
-
-# Compression status files (temporary)
-.compression-status/
 
 # SSL certificates (never commit these!)
 ssl/*.pem

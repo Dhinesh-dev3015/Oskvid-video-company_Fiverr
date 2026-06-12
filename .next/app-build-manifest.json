@@ -1,0 +1,100 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/par-oskvid/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/par-oskvid/page.js"
+    ],
+    "/par-oskvid/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/par-oskvid/layout.js"
+    ],
+    "/video-filmesana/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/video-filmesana/layout.js"
+    ],
+    "/video-filmesana/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/video-filmesana/page.js"
+    ],
+    "/atsauksmes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/atsauksmes/page.js"
+    ],
+    "/atsauksmes/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/atsauksmes/layout.js"
+    ],
+    "/oskvid-kontakti/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/oskvid-kontakti/page.js"
+    ],
+    "/oskvid-kontakti/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/oskvid-kontakti/layout.js"
+    ],
+    "/portfolio/kazu-video-latvija/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio/kazu-video-latvija/page.js"
+    ],
+    "/portfolio/kazu-video-latvija/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio/kazu-video-latvija/layout.js"
+    ],
+    "/portfolio/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio/layout.js"
+    ],
+    "/portfolio/reklamas-video/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio/reklamas-video/page.js"
+    ],
+    "/portfolio/reklamas-video/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/portfolio/reklamas-video/layout.js"
+    ],
+    "/kazu-blogs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/kazu-blogs/page.js"
+    ],
+    "/kazu-blogs/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/kazu-blogs/layout.js"
+    ],
+    "/kazu-blogs/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/kazu-blogs/loading.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
+    ]
+  }
+}
