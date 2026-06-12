@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <!-- Ship icon -->
+  <path d="M20 60 Q30 50 40 50 Q50 50 60 60 L65 65 L15 65 Z" fill="#1e40af"/>
+  <rect x="35" y="30" width="3" height="25" fill="#374151"/>
+  <polygon points="38,30 55,35 38,40" fill="#dc2626"/>
+  
+  <!-- Waves -->
+  <path d="M10 70 Q20 65 30 70 Q40 75 50 70 Q60 65 70 70" stroke="#06b6d4" stroke-width="2" fill="none"/>
+  <path d="M15 75 Q25 70 35 75 Q45 80 55 75 Q65 70 75 75" stroke="#0891b2" stroke-width="2" fill="none"/>
+  
+  <!-- Company name -->
+  <text x="90" y="40" font-family="serif" font-size="24" font-weight="bold" fill="#1e40af">Hanseatic</text>
+  <text x="90" y="60" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">MARITIME SOLUTIONS</text>
+  
+  <!-- Compass rose -->
+  <circle cx="270" cy="35" r="15" fill="#fbbf24" opacity="0.2"/>
+  <path d="M270 25 L275 30 L270 35 L265 30 Z" fill="#fbbf24"/>
+  <path d="M260 35 L265 30 L270 35 L265 40 Z" fill="#f97316"/>
+  <path d="M270 45 L265 40 L270 35 L275 40 Z" fill="#fbbf24"/>
+  <path d="M280 35 L275 40 L270 35 L275 30 Z" fill="#f97316"/>
+</svg>

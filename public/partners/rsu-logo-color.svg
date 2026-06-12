@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <!-- University building icon -->
+  <rect x="20" y="30" width="60" height="60" fill="#1e40af" rx="3"/>
+  <rect x="30" y="40" width="8" height="8" fill="#ffffff"/>
+  <rect x="42" y="40" width="8" height="8" fill="#ffffff"/>
+  <rect x="54" y="40" width="8" height="8" fill="#ffffff"/>
+  <rect x="30" y="52" width="8" height="8" fill="#ffffff"/>
+  <rect x="42" y="52" width="8" height="8" fill="#ffffff"/>
+  <rect x="54" y="52" width="8" height="8" fill="#ffffff"/>
+  <rect x="30" y="64" width="8" height="8" fill="#ffffff"/>
+  <rect x="42" y="64" width="8" height="8" fill="#ffffff"/>
+  <rect x="54" y="64" width="8" height="8" fill="#ffffff"/>
+  
+  <!-- University name -->
+  <text x="95" y="45" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e40af">RĪGAS STRADIŅA</text>
+  <text x="95" y="70" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#dc2626">UNIVERSITĀTE</text>
+  
+  <!-- Medical cross symbol -->
+  <rect x="250" y="35" width="4" height="16" fill="#dc2626"/>
+  <rect x="246" y="39" width="12" height="4" fill="#dc2626"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="85" cy="55" r="2" fill="#fbbf24"/>
+  <circle cx="270" cy="75" r="1.5" fill="#10b981"/>
+</svg>

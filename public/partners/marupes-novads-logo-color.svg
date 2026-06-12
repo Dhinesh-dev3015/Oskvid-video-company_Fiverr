@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <!-- Shield background -->
+  <path d="M50 20 Q50 15 55 15 L245 15 Q250 15 250 20 L250 70 Q250 85 150 95 Q50 85 50 70 Z" fill="#dc2626"/>
+  <path d="M60 25 Q60 22 63 22 L237 22 Q240 22 240 25 L240 65 Q240 78 150 85 Q60 78 60 65 Z" fill="#ffffff"/>
+  
+  <!-- Tree symbol -->
+  <circle cx="150" cy="45" r="12" fill="#16a34a"/>
+  <rect x="147" y="55" width="6" height="15" fill="#92400e"/>
+  
+  <!-- Crown elements -->
+  <polygon points="130,35 140,25 135,30" fill="#fbbf24"/>
+  <polygon points="165,30 175,25 170,35" fill="#fbbf24"/>
+  <circle cx="150" cy="30" r="3" fill="#fbbf24"/>
+  
+  <!-- Text -->
+  <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626" text-anchor="middle">MĀRUPE</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="40" r="2" fill="#16a34a"/>
+  <circle cx="200" cy="40" r="2" fill="#16a34a"/>
+</svg>

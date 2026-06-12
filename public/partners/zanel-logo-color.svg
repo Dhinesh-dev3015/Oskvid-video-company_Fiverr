@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
+  <!-- Circular background -->
+  <circle cx="50" cy="50" r="35" fill="#2563eb"/>
+  <circle cx="50" cy="50" r="25" fill="#1e40af"/>
+  
+  <!-- Z letter in center -->
+  <path d="M38 35 L62 35 L38 65 L62 65" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Company name -->
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1e40af">ZANĒL</text>
+  <text x="100" y="65" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">PROJEKTĒŠANA UN BŪVNIECĪBA</text>
+  
+  <!-- Decorative dots -->
+  <circle cx="25" cy="25" r="3" fill="#fbbf24"/>
+  <circle cx="75" cy="25" r="2" fill="#10b981"/>
+  <circle cx="25" cy="75" r="2" fill="#f97316"/>
+</svg>

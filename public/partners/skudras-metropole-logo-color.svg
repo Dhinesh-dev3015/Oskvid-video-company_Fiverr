@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100">
+  <!-- Ant silhouette -->
+  <ellipse cx="40" cy="50" rx="8" ry="6" fill="#92400e"/>
+  <ellipse cx="55" cy="45" rx="6" ry="4" fill="#92400e"/>
+  <ellipse cx="68" cy="50" rx="10" ry="7" fill="#92400e"/>
+  
+  <!-- Ant legs -->
+  <line x1="35" y1="55" x2="30" y2="65" stroke="#92400e" stroke-width="2"/>
+  <line x1="45" y1="55" x2="40" y2="65" stroke="#92400e" stroke-width="2"/>
+  <line x1="50" y1="50" x2="45" y2="60" stroke="#92400e" stroke-width="2"/>
+  <line x1="60" y1="50" x2="65" y2="60" stroke="#92400e" stroke-width="2"/>
+  <line x1="65" y1="55" x2="70" y2="65" stroke="#92400e" stroke-width="2"/>
+  <line x1="75" y1="55" x2="80" y2="65" stroke="#92400e" stroke-width="2"/>
+  
+  <!-- Antennae -->
+  <line x1="68" y1="45" x2="75" y2="35" stroke="#92400e" stroke-width="1.5"/>
+  <line x1="70" y1="45" x2="77" y2="35" stroke="#92400e" stroke-width="1.5"/>
+  <circle cx="75" cy="35" r="1.5" fill="#92400e"/>
+  <circle cx="77" cy="35" r="1.5" fill="#92400e"/>
+  
+  <!-- Company name -->
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#dc2626">SKUDRAS</text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e40af">METROPOLE</text>
+  <text x="100" y="75" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">SHOPPING CENTER</text>
+  
+  <!-- Building elements -->
+  <rect x="250" y="30" width="15" height="25" fill="#6b7280"/>
+  <rect x="268" y="25" width="12" height="30" fill="#6b7280"/>
+  <rect x="283" y="35" width="10" height="20" fill="#6b7280"/>
+  
+  <!-- Windows -->
+  <rect x="252" y="35" width="3" height="3" fill="#fbbf24"/>
+  <rect x="257" y="35" width="3" height="3" fill="#fbbf24"/>
+  <rect x="270" y="30" width="3" height="3" fill="#fbbf24"/>
+  <rect x="270" y="40" width="3" height="3" fill="#fbbf24"/>
+  <rect x="285" y="40" width="3" height="3" fill="#fbbf24"/>
+</svg>

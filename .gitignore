@@ -9,10 +9,7 @@
 
 # production
 /build
-/public/images
-/public/*
-/public*
-public
+
 # debug
 npm-debug.log*
 yarn-debug.log*
