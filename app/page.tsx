@@ -44,13 +44,13 @@ export default function Home() {
           >
             <DynamicContent
               contentKey="homeHeroMainTitle"
-              fallback="Profesionāla Video Ražošana"
+              fallback="Video filmēšana, kāzu videogrāfs un satura izveide Latvijā"
               className="mb-3 sm:mb-4 text-mobile-title text-[#cc5339] leading-tight"
               as="h1"
             />
             <DynamicContent
               contentKey="homeHeroDescription"
-              fallback="Mēs specializējamās kāzu, mūzikas video, korparatīvo un reklāmas video ražošanā ar vairāk nekā 8 gadu pieredzi. Radām kvalitatīvus video risinājumus, kas palīdz jūsu stāstam sasniegt auditoriju."
+              fallback="Kāzu video un pasākumu iemūžināšana | Video sociālajiem tīkliem un Reels | Drona pakalpojumi visā Latvijā"
               className="text-mobile-body text-white text-shadow-glow max-w-3xl mx-auto"
               as="p"
             />

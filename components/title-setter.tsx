@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { usePathname } from "next/navigation"
-import { useLanguage } from "@/contexts/language-context"
+import { useLanguage } from "../contexts/language-context"
 
 const pageTitles = {
   "/": {

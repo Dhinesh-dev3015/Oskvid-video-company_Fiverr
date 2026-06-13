@@ -1,6 +1,7 @@
 "use client"
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+import { createContext, useContext, useState, type ReactNode } from "react"
+import translations from "@/translations"
 
 type Language = "lv"
 
@@ -27,34 +28,12 @@ interface LanguageProviderProps {
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
   const [language, setLanguageState] = useState<Language>("lv")
-  const [translations, setTranslations] = useState<any>({})
-  const [isLoaded, setIsLoaded] = useState(false)
-
-  useEffect(() => {
-    // Load translations
-    try {
-      import("@/translations")
-        .then((module) => {
-          setTranslations(module.default || {})
-          setIsLoaded(true)
-        })
-        .catch((error) => {
-          console.warn("Failed to load translations:", error)
-          setIsLoaded(true)
-        })
-    } catch (error) {
-      console.warn("Translation import error:", error)
-      setIsLoaded(true)
-    }
-  }, [])
 
   const setLanguage = (newLanguage: Language) => {
     setLanguageState(newLanguage)
   }
 
   const t = (key: string): string => {
-    if (!isLoaded || !translations) return key
-
     try {
       const keys = key.split(".")
       let current: any = translations
@@ -67,12 +46,10 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
         }
       }
 
-      // If current is a string, return it
       if (typeof current === "string") {
         return current
       }
 
-      // If current is an object with language key, return that
       if (current && typeof current === "object" && current[language]) {
         return current[language]
       }
@@ -84,9 +61,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
     }
   }
 
-  const languageKey = language
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, languageKey }}>{children}</LanguageContext.Provider>
+    <LanguageContext.Provider value={{ language, setLanguage, t, languageKey: language }}>
+      {children}
+    </LanguageContext.Provider>
   )
 }

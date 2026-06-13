@@ -1,10 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/api/content/route": "app/api/content/route.js",
-  "/api/news/route": "app/api/news/route.js",
-  "/par-oskvid/page": "app/par-oskvid/page.js",
-  "/atsauksmes/page": "app/atsauksmes/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/video-filmesana/page": "app/video-filmesana/page.js",
   "/kazu-blogs/page": "app/kazu-blogs/page.js"
 }

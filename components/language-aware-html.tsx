@@ -1,6 +1,6 @@
 "use client"
 
-import { useLanguage } from "@/contexts/language-context"
+import { useLanguage } from "../contexts/language-context"
 import { useEffect, type ReactNode } from "react"
 import { DynamicSEO } from "./dynamic-seo"
 
