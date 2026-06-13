@@ -47,7 +47,7 @@ export default function PakalpojumiPage() {
          <DynamicSEO />
 
          {/* Hero Section */}
-         <section className='relative pt-32 pb-16 overflow-hidden'>
+         <section className='relative h-[55vh] pt-20 overflow-hidden'>
             <div className='absolute inset-0 bg-gradient-to-r from-black/70 to-black/50 z-10' />
             <div className='absolute inset-0'>
                <DynamicImage
@@ -61,26 +61,26 @@ export default function PakalpojumiPage() {
                />
             </div>
 
-            <div className='container mx-auto px-4 relative z-20'>
-               <div className='max-w-4xl mx-auto text-center text-white'>
+            <div className='container mx-auto px-4 relative z-20 h-full flex flex-col items-center justify-center'>
+                <div className='max-w-4xl mx-auto text-center text-white'>
                   <motion.div
                      initial={{ opacity: 1, y: 30 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.8 }}
                   >
                     <h1 className='text-4xl md:text-6xl font-bold mb-6 leading-tight'>
-                       <DynamicContent contentKey='servicesHeroTitle' fallback='Pārvēršam jūsu' />
+                       <DynamicContent contentKey='servicesHeroTitle' fallback='Profesionāli' />
                        {' '}
                        <span style={{ color: '#cc5339' }}>
-                          <DynamicContent contentKey='servicesHeroTitleHighlight' fallback='vīzijas' />
+                          <DynamicContent contentKey='servicesHeroTitleHighlight' fallback='video risinājumi tavai' />
                        </span>
                        {' '}
-                       <DynamicContent contentKey='servicesHeroSubtitle' fallback='realitātē' />
+                       <DynamicContent contentKey='servicesHeroSubtitle' fallback='izaugsmei un atmiņām.' />
                     </h1>
                      <p className='text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto'>
                         <DynamicContent
                            contentKey='servicesHeroDescription'
-                           fallback='No koncepcijas līdz gatavam produktam - mēs nodrošinām visus video ražošanas posmus'
+                           fallback='No personīgiem stāstiem līdz jaudīgam saturam uzņēmumiem.'
                         />
                      </p>
                   </motion.div>
@@ -317,7 +317,7 @@ export default function PakalpojumiPage() {
                                           </Button>
                                        </div>
 
-                                       <CardContent className='p-6 flex-1 overflow-y-auto min-h-0 flex flex-col'>
+                                       <CardContent className='p-6 flex-1 overflow-y-auto min-h-0 flex flex-col items-center text-center'>
                                           <h3 className="text-2xl font-bold text-center mb-6">
                                              {activeService === 0 && (
                                                 <DynamicContent
@@ -338,7 +338,7 @@ export default function PakalpojumiPage() {
                                                 />
                                              )}
                                           </h3>
-                                          <p className='text-gray-600 mb-4'>
+                                          <p className='text-gray-600 mb-4 text-center max-w-2xl'>
                                              {activeService === 0 && (
                                                 <DynamicContent
                                                    contentKey='serviceWeddingDescription'
@@ -419,16 +419,15 @@ export default function PakalpojumiPage() {
 
                                           </div>
 
-                                          <div className='mb-8'>
-                                             <h4 className='font-semibold mb-4 flex items-center gap-2'>
+                                          <div className='mb-8 flex flex-col items-center text-center w-full'>
+                                             <h4 className='font-semibold mb-4 flex items-center justify-center gap-2'>
                                                 <CheckCircle className='h-5 w-5 text-green-500' />
                                                 Iekļautie pakalpojumi
                                              </h4>
-                                             <div className='grid grid-cols-1 gap-2'>
+                                             <div className='flex flex-col gap-2 w-full max-w-xl items-center'>
                                                 {activeService === 0 && (
                                                    <>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded1'
@@ -437,7 +436,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded2'
@@ -446,7 +444,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded3'
@@ -455,7 +452,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded4'
@@ -464,7 +460,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded5'
@@ -473,7 +468,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceWeddingIncluded6'
@@ -486,7 +480,6 @@ export default function PakalpojumiPage() {
                                                 {activeService === 1 && (
                                                    <>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded1'
@@ -495,7 +488,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded2'
@@ -504,7 +496,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded3'
@@ -513,7 +504,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded4'
@@ -522,7 +512,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded5'
@@ -531,7 +520,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceAdIncluded6'
@@ -544,7 +532,6 @@ export default function PakalpojumiPage() {
                                                 {activeService === 2 && (
                                                    <>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded1'
@@ -553,7 +540,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded2'
@@ -562,7 +548,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded3'
@@ -571,7 +556,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded4'
@@ -580,7 +564,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded5'
@@ -589,7 +572,6 @@ export default function PakalpojumiPage() {
                                                          </span>
                                                       </div>
                                                       <div className='flex items-center gap-2 text-sm'>
-                                                         <CheckCircle className='h-4 w-4 text-green-500 flex-shrink-0' />
                                                          <span>
                                                             <DynamicContent
                                                                contentKey='serviceEventIncluded6'
@@ -603,11 +585,11 @@ export default function PakalpojumiPage() {
                                           </div>
 
                                           <div className='mb-8'>
-                                             <h4 className='font-semibold mb-4 flex items-center gap-2'>
+                                             <h4 className='font-semibold mb-4 flex items-center justify-center gap-2'>
                                                 <CheckCircle className='h-5 w-5 text-green-500' />
                                                 Galvenās iezīmes
                                              </h4>
-                                             <div className='flex flex-wrap gap-2'>
+                                             <div className='flex flex-wrap gap-2 justify-center'>
                                                 {activeService === 0 && (
                                                    <>
                                                       <span className='px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium'>
@@ -677,7 +659,7 @@ export default function PakalpojumiPage() {
                                              </div>
                                           </div>
 
-                                          <div className='flex gap-3'>
+                                          <div className='flex gap-3 w-full'>
                                              <Link
                                                 href='/oskvid-kontakti'
                                                 className='flex-1 text-white font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 border-0 flex items-center justify-center text-center hover:opacity-90'

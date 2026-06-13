@@ -1365,6 +1365,9 @@ video {
 .min-h-svh {
   min-height: 100svh;
 }
+.min-h-\[55vh\] {
+  min-height: 55vh;
+}
 .w-0 {
   width: 0px;
 }

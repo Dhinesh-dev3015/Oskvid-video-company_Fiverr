@@ -39,13 +39,13 @@ export function DynamicContent({
   className = '',
   as: Component = 'span',
 }: DynamicContentProps) {
-  // Always start with fallback to match server render exactly
   const [content, setContent] = useState(fallback)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Only runs on client after hydration — safe to read localStorage here
     const saved = readStorage(contentKey)
-    if (saved) setContent(saved)
+    setContent(saved || fallback)
+    setMounted(true)
 
     const handleContentUpdate = (event: CustomEvent) => {
       if (event.detail.key === contentKey) setContent(event.detail.value)
@@ -62,9 +62,13 @@ export function DynamicContent({
       window.removeEventListener('contentUpdated' as any, handleContentUpdate)
       window.removeEventListener('storage', handleStorageChange)
     }
-  }, [contentKey])
+  }, [contentKey, fallback])
 
-  return <Component className={className}>{content}</Component>
+  return (
+    <Component className={className} suppressHydrationWarning>
+      {mounted ? content : fallback}
+    </Component>
+  )
 }
 
 export function DynamicImage({
@@ -79,12 +83,24 @@ export function DynamicImage({
   priority = false,
   objectPosition,
 }: DynamicImageProps) {
-  // Always start with fallback to match server render exactly
   const [imageSrc, setImageSrc] = useState(fallback)
+  const [ready, setReady] = useState(false)
 
   useEffect(() => {
     const saved = readStorage(contentKey)
-    if (saved) setImageSrc(saved)
+    const src = saved || fallback
+
+    // Preload the image before swapping so there's no dark flash
+    const img = new window.Image()
+    img.src = src
+    img.onload = () => {
+      setImageSrc(src)
+      setReady(true)
+    }
+    img.onerror = () => {
+      setImageSrc(fallback)
+      setReady(true)
+    }
 
     const handleImageUpdate = (event: CustomEvent) => {
       if (event.detail.key === contentKey) setImageSrc(event.detail.value)
@@ -101,11 +117,25 @@ export function DynamicImage({
       window.removeEventListener('imageUpdated' as any, handleImageUpdate)
       window.removeEventListener('storage', handleStorageChange)
     }
-  }, [contentKey])
+  }, [contentKey, fallback])
 
   const sizes = fill
     ? '(max-width: 475px) 100vw, (max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw'
     : '(max-width: 475px) 100vw, (max-width: 768px) 50vw, 33vw'
+
+  if (!ready) {
+    if (fill) {
+      return (
+        <div
+          className={`image-mobile ${className}`}
+          style={{ position: 'absolute', inset: 0, background: '#1a1a1a' }}
+        />
+      )
+    }
+    return (
+      <div style={{ width: width || 400, height: height || 300, background: '#1a1a1a' }} />
+    )
+  }
 
   if (fill) {
     return (
@@ -116,7 +146,7 @@ export function DynamicImage({
         sizes={sizes}
         quality={85}
         priority={priority}
-        loading={priority ? 'eager' : 'lazy'}
+        loading='eager'
         className={`image-mobile ${className}`}
         style={{ objectFit: objectFit || 'cover', objectPosition: objectPosition || 'center' }}
       />
@@ -132,7 +162,7 @@ export function DynamicImage({
       sizes={sizes}
       quality={85}
       priority={priority}
-      loading={priority ? 'eager' : 'lazy'}
+      loading='eager'
       className={`image-mobile ${className}`}
       style={{ height: 'auto', maxWidth: '100%' }}
     />

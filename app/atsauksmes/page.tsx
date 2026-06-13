@@ -4,8 +4,8 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown, MessageCircle, Quote, Star } from "lucide-react";
-import { useLanguage } from "@/contexts/language-context";
-import { DynamicContent, DynamicImage } from "@/components/dynamic-content";
+import { useLanguage } from "../../contexts/language-context";
+import { DynamicContent, DynamicImage } from "../../components/dynamic-content";
 
 interface Testimonial {
   id: number;
