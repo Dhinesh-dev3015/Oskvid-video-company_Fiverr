@@ -63,7 +63,7 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "latest",
     "vaul": "^0.9.6",
-    "zod": "^3.24.1",
+    "zod": "*",
     "better-sqlite3": "^12.0.0",
     "sharp": "^0.33.0",
     "fluent-ffmpeg": "^2.1.2"
